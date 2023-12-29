@@ -2,6 +2,8 @@ import './App.css';
 import PokemonList from './Components/PokemonList';
 import Navbar from './Components/Nav';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
@@ -16,9 +18,10 @@ function App() {
         <Route path='/sixthgeneration' element={<PokemonList startSlice={650} endSlice={721} />} />
         <Route path='/seventhgeneration' element={<PokemonList startSlice={722} endSlice={809} />} />
         <Route path='/eighthgeneration' element={<PokemonList startSlice={810} endSlice={905} />} />
+        <Route path='/ninethgeneration' element={<PokemonList startSlice={906} endSlice={1015} />} />
       </Routes>
     </Router>
   );
-}
+};
 
 export default App;
