@@ -1,14 +1,14 @@
 import './App.css';
 import PokemonList from './Components/PokemonList';
-import Navbar from './Components/Nav';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import NavbarPoke from './Components/Nav';
 
 
 function App() {
   return (
     <Router>
-      <Navbar />
+      <NavbarPoke />
       <Routes>
         <Route path='/firstgeneration' element={<PokemonList startSlice={0} endSlice={151} />} />
         <Route path='/secondgeneration' element={<PokemonList startSlice={152} endSlice={251} />} />

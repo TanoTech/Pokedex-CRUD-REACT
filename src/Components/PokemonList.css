@@ -1,3 +1,9 @@
+body {
+    background-image: url('/public/assets/imgs/pokeballBg.jpeg');
+    background-size: contain;
+    background-repeat: repeat;
+}
+
 h2 {
     text-transform: capitalize;
 }
@@ -12,13 +18,17 @@ h2 {
 
 .card {
     margin: 1.5rem 0;
-    width: 15rem;
-    height: 8svh;
-    border: 8px inset yellow !important;
+    width: 18rem;
 
+    border: 8px inset yellow !important;
     img {
         filter: drop-shadow(12px 8px 12px black);
-    }
+        &:hover {
+            transform: scale(1.5);
+            z-index: 9;
+            animation: shake 3s linear;
+        }
+    }   
 }
 
 .card-header {
@@ -67,3 +77,26 @@ h2 {
     -webkit-backdrop-filter: blur(20px);
     text-transform: capitalize;
 }
+
+
+@keyframes shake {
+    0% {
+      transform: translateX(0) scale(1.5);
+    }
+    25% {
+      transform: translateX(-5px) scale(1.6);
+
+    }
+    50% {
+      transform: translateX(5px) scale(1.7);
+    
+    }
+    75% {
+      transform: translateX(-5px) scale(1.6);
+    
+    }
+    100% {
+      transform: translateX(0) scale(1.5);
+     
+    }
+  }

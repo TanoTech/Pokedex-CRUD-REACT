@@ -6,6 +6,7 @@ import './PokemonTypes.css';
 import PokeballLoader from "./PokeballLoader";
 
 
+
 class PokemonList extends React.Component {
     constructor(props) {
         super(props);
@@ -39,7 +40,7 @@ class PokemonList extends React.Component {
         const displayedPokemons = data.slice(startSlice, endSlice);
 
         return (
-            <Container className="container-fluid">
+            <Container>
                 <Row>
                     <Col>
                         {displayedPokemons.map((pokemon, index) => (
@@ -47,7 +48,14 @@ class PokemonList extends React.Component {
                                 <CardHeader>
                                     <h2>{pokemon.name}</h2>
                                 </CardHeader>
-                                <CardImg src={pokemon.sprites.front_default} alt={pokemon.name} />
+                                {pokemon.sprites.other['official-artwork'].front_default ? (
+                                    <CardImg
+                                        src={pokemon.sprites.other['official-artwork'].front_default}
+                                        alt={pokemon.name}
+                                    />
+                                ) : (
+                                    <CardImg src={pokemon.sprites.front_default} alt={pokemon.name} />
+                                )}
                                 <CardBody>
                                     {pokemon.stats.slice(0, 3).map((stat, index) => (
                                         <p key={index}>
@@ -112,8 +120,8 @@ class PokemonList extends React.Component {
                                                 typeClass = 'type-ice';
                                                 break;
                                             case 'dark':
-                                                typeClass = 'type-dark'  ;
-                                                break;  
+                                                typeClass = 'type-dark';
+                                                break;
                                             default:
                                                 break;
                                         }
@@ -128,7 +136,7 @@ class PokemonList extends React.Component {
                         ))}
                     </Col>
                 </Row>
-            </Container> 
+            </Container>
         );
     }
 }
