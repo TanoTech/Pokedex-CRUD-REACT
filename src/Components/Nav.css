@@ -3,6 +3,11 @@
     top: 0;
     z-index: 10;
     font-size: 18px;
+    background: rgb(247,255,0)!important;
+    background: -moz-radial-gradient(circle, rgba(247,255,0,1) 25%, rgba(216,219,8,1) 52%, rgba(198,197,13,1) 68%, rgba(198,197,13,1) 81%)!important;
+    background: -webkit-radial-gradient(circle, rgba(247,255,0,1) 25%, rgba(216,219,8,1) 52%, rgba(198,197,13,1) 68%, rgba(198,197,13,1) 81%)!important;
+    background: radial-gradient(circle, rgba(247,255,0,1) 25%, rgba(216,219,8,1) 52%, rgba(198,197,13,1) 68%, rgba(198,197,13,1) 81%)!important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7ff00",endColorstr="#c6c50d",GradientType=1);
 }
 
 .navbar-collapse {
@@ -10,5 +15,22 @@
 }
 
 .dropdown-menu {
-    background-color: #000000; 
-  }
+    background: rgb(247,255,0)!important;
+    background: -moz-radial-gradient(circle, rgba(247,255,0,1) 25%, rgba(216,219,8,1) 52%, rgba(198,197,13,1) 68%, rgba(198,197,13,1) 81%)!important;
+    background: -webkit-radial-gradient(circle, rgba(247,255,0,1) 25%, rgba(216,219,8,1) 52%, rgba(198,197,13,1) 68%, rgba(198,197,13,1) 81%)!important;
+    background: radial-gradient(circle, rgba(247,255,0,1) 25%, rgba(216,219,8,1) 52%, rgba(198,197,13,1) 68%, rgba(198,197,13,1) 81%)!important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7ff00",endColorstr="#c6c50d",GradientType=1);
+}
+
+.nav-link, .navbar-brand {
+    color: rgb(192, 0, 6)!important;
+    font-weight: bold;
+}
+
+.navbar-brand {
+    margin-left: 1em;
+}
+
+button {
+    margin-left: 1em;
+}

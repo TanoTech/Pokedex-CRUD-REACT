@@ -14,7 +14,7 @@ class NavbarPoke extends React.Component {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                        <LinkContainer to="/"><Nav.Link>Home</Nav.Link></LinkContainer>
+                        <LinkContainer to="/"><Nav.Link>Battleground</Nav.Link></LinkContainer>
                         <NavDropdown title='Generation'>
                             <LinkContainer to="/firstgeneration"><Nav.Link>First Gen</Nav.Link></LinkContainer>
                             <LinkContainer to="/secondgeneration"><Nav.Link>Second Gen</Nav.Link></LinkContainer>
@@ -31,7 +31,7 @@ class NavbarPoke extends React.Component {
                         <FormControl
                             type="text"
                             placeholder="Search Pokémon" />
-                        <Button variant="outline-info" type="submit">
+                        <Button variant="outline-danger" type="submit">
                             Search
                         </Button>
                     </Form>

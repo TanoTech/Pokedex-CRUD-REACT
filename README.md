@@ -1,1 +1,1 @@
-Sto creando in REACT un Pokèdex sfruttando Pokeapi
+REACT APP POKEMON POKÈDEX
