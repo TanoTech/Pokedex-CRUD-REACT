@@ -37,7 +37,7 @@ class PokemonList extends React.Component {
             return <PokeballLoader />;
         }
 
-        const displayedPokemons = data.slice(startSlice, endSlice);
+        const displayedPokemons = data.slice(startSlice, endSlice); 
 
         return (
             <Container>

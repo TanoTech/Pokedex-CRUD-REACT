@@ -21,6 +21,7 @@ h2 {
     width: 18rem;
 
     border: 8px inset yellow !important;
+
     img {
         filter: drop-shadow(12px 8px 12px black);
         &:hover {
@@ -28,24 +29,15 @@ h2 {
             z-index: 9;
             animation: shake 3s linear;
         }
-    }   
+    }
 }
 
 .card-header {
     text-align: center;
     text-shadow: 4px 3px 0px #7A7A7A, 2px 17px 20px #CECECE;
-
     h2 {
         font-weight: bold;
     }
-}
-
-.singlePokemon {
-    background: rgb(255, 203, 5) !important;
-    background: -moz-radial-gradient(circle, rgba(255, 203, 5, 1) 14%, rgba(233, 187, 10, 1) 35%, rgba(182, 150, 25, 1) 58%, rgba(158, 133, 35, 1) 86%) !important;
-    background: -webkit-radial-gradient(circle, rgba(255, 203, 5, 1) 14%, rgba(233, 187, 10, 1) 35%, rgba(182, 150, 25, 1) 58%, rgba(158, 133, 35, 1) 86%) !important;
-    background: radial-gradient(circle, rgba(255, 203, 5, 1) 14%, rgba(233, 187, 10, 1) 35%, rgba(182, 150, 25, 1) 58%, rgba(158, 133, 35, 1) 86%) !important;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffcb05", endColorstr="#9e8523", GradientType=1);
 }
 
 .card-header,
@@ -69,8 +61,8 @@ h2 {
 }
 
 .card-body {
-    color: rgb(54, 53, 53)!important;
-    font-weight: bold!important;
+    color: rgb(54, 53, 53) !important;
+    font-weight: bold !important;
     background: rgba(255, 255, 255, 0.206);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(20px);
@@ -78,25 +70,32 @@ h2 {
     text-transform: capitalize;
 }
 
-
 @keyframes shake {
     0% {
-      transform: translateX(0) scale(1.5);
+        transform: translateX(0) scale(1.5);
     }
     25% {
-      transform: translateX(-5px) scale(1.6);
-
+        transform: translateX(-5px) scale(1.6);
     }
     50% {
-      transform: translateX(5px) scale(1.7);
-    
+        transform: translateX(5px) scale(1.7);
     }
     75% {
-      transform: translateX(-5px) scale(1.6);
-    
+        transform: translateX(-5px) scale(1.6);
     }
     100% {
-      transform: translateX(0) scale(1.5);
-     
+        transform: translateX(0) scale(1.5);
     }
-  }
+}
+
+.singlePokemon {
+    background: rgb(255, 203, 5) !important;
+    background: -moz-radial-gradient(circle, rgba(255, 203, 5, 1) 14%, rgba(233, 187, 10, 1) 35%, rgba(182, 150, 25, 1) 58%, rgba(158, 133, 35, 1) 86%) !important;
+    background: -webkit-radial-gradient(circle, rgba(255, 203, 5, 1) 14%, rgba(233, 187, 10, 1) 35%, rgba(182, 150, 25, 1) 58%, rgba(158, 133, 35, 1) 86%) !important;
+    background: radial-gradient(circle, rgba(255, 203, 5, 1) 14%, rgba(233, 187, 10, 1) 35%, rgba(182, 150, 25, 1) 58%, rgba(158, 133, 35, 1) 86%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffcb05", endColorstr="#9e8523", GradientType=1);
+
+    &:hover {
+        border: dotted rgba(255, 203, 5, 1) !important;
+    }
+}

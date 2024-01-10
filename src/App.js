@@ -1,15 +1,18 @@
 import './App.css';
 import PokemonList from './Components/PokemonList';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarPoke from './Components/Nav';
+import MyDeck from './Components/MyDeck';
 
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <NavbarPoke />
       <Routes>
+        <Route path='/battleground' />
+        <Route path='/mydeck' element={<MyDeck />} />
         <Route path='/firstgeneration' element={<PokemonList startSlice={0} endSlice={151} />} />
         <Route path='/secondgeneration' element={<PokemonList startSlice={152} endSlice={251} />} />
         <Route path='/thirdgeneration' element={<PokemonList startSlice={252} endSlice={386} />} />
@@ -20,7 +23,7 @@ function App() {
         <Route path='/eighthgeneration' element={<PokemonList startSlice={810} endSlice={905} />} />
         <Route path='/ninethgeneration' element={<PokemonList startSlice={906} endSlice={1015} />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 };
 
