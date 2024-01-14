@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import './PokeLoader.css'
 
 class PokeballLoader extends Component {
 

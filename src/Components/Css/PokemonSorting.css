@@ -1,0 +1,5 @@
+.sortingPokedex {
+    position: sticky;
+    top: 4rem;
+    z-index: 10;
+}

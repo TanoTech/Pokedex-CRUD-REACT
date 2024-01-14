@@ -1,3 +1,10 @@
+@import './Components/Css/Nav.css';
+@import './Components/Css/PokemonList.css';
+@import './Components/Css/PokeLoader.css';
+@import './Components/Css/PokemonTypes.css';
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import './Components/Css/PokemonSorting.css';
+
 .App {
   text-align: center;
 }
